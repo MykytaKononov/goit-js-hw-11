@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="form">
+      <input
+        type="text"
+        id="input"
+        class="input"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+
+      <button class="searchbutton" id="searchbutton">Search</button>
+      <span class="loader" style="visibility: hidden"></span>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
