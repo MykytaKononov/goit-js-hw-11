@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="form">
+    <form class="form" id="form">
       <input
         type="text"
         id="input"
@@ -21,9 +21,11 @@
         placeholder="Search images..."
       />
 
-      <button class="searchbutton" id="searchbutton">Search</button>
+      <button type="submit" class="searchbutton" id="searchbutton">
+        Search
+      </button>
       <span class="loader" style="visibility: hidden"></span>
-    </div>
+    </form>
 
     <div class="gallery" id="gallery"></div>
     <script type="module" src="./main.js"></script>
